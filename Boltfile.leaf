@@ -1,0 +1,28 @@
+{
+	modules =
+	{
+		clean = "https://raw.githubusercontent.com/WellingtonDias/bolt-clean/master/index.js",
+		execute = "https://raw.githubusercontent.com/WellingtonDias/bolt-execute/master/index.js",
+		merge = "https://raw.githubusercontent.com/WellingtonDias/bolt-merge/master/index.js"
+	},
+	clean = "./index.js",
+	execute = "npm publish",
+	merge =
+	{
+		input =
+		[
+			["./src/helper/",["header","getType","throwError","filterString"],".js"],
+			["./src/lexer/",["header","readToken","readComment","readWord","readNumber","readString","readScheme","readPunctuation"],".js"],
+			["./src/encoder/",["header","encodeValue","encodeList","encodeMap"],".js"],
+			["./src/decoder/",["header","decodeStream","decodeValue","decodeScheme","decodeList","decodeMap","registerModel","registerType"],".js"],
+			"./src/export.js"
+		],
+		output = "./index.js"
+	},
+	macros =
+	{
+		build = "merge",
+		publish = "execute",
+		clean = "clean"
+	}
+}

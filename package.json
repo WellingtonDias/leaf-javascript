@@ -1,0 +1,19 @@
+{
+	"name": "leaf-javascript",
+	"version": "1.0.15",
+	"description": "Leaf Data Interchange Format",
+	"author": "Wellington Dias <wellingtongomesdias@gmail.com> (https://poliglota.me)",
+	"license": "MIT",
+	"keywords": [
+		"leaf",
+		"data",
+		"interchange",
+		"format",
+		"poliglota-me",
+		"poliglota.me",
+		"poliglota"
+	],
+	"homepage": "https://leaf.poliglota.me",
+	"repository": "github:WellingtonDias/leaf-javascript",
+	"main": "index.js"
+}

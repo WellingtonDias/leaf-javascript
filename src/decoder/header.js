@@ -1,0 +1,3 @@
+const decoder = {};
+
+decoder.models = {};
